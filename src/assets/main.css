@@ -114,15 +114,16 @@ section .home-title p {
   border: 1px solid #6469ff;
   outline: none;
 }
-.loader {
+.loader .animate-spin {
+  fill: #6469ff;
   display: inline;
   width: 40px;
   height: 40px;
   color: rgb(229, 231, 235);
   margin-right: 8px;
   animation: spin 1s linear infinite;
-  fill: #6469ff;
 }
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -155,7 +156,7 @@ section .home-title p {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
-.cards-wrapper .title {
+.title {
   margin-top: 20px;
   font-weight: 700;
   color: #6469ff;
